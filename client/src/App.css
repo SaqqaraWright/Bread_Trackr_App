@@ -1,0 +1,69 @@
+/*********** Utility Classes **********/
+
+.App {
+  text-align: center;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  gap: 1.5rem;
+}
+/********** Container Classes: Forms and Navbar */
+.form-container{
+  width: 500px;
+  margin: 0 auto;
+}
+.container{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.navBar{
+  background-color: #152057; /*navbar light gray color: #f7f7f7*/
+  width: 100%;
+  height: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 35px;
+}
+
+.form{
+  border: black solid 1px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.bottomline{
+  border-bottom: 2px solid black;
+  margin-bottom: 15px;
+}
+
+/*********** Button and icons **********/
+
+.icon{
+  width: 30px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.btn {
+  background-color: #ee6c45; /* Green */
+  border: none;
+  color: #000000;
+  /* padding: 15px 32px; */
+  width: 150px;
+  margin-bottom: 3px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/*Logo colors*/
+#brown{
+  color: #ea5629;
+}
+.blue{
+  color: lawngreen;
+}
