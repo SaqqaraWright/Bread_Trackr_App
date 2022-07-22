@@ -12,13 +12,13 @@ app.use(express.urlencoded({extended: true})); //lets our app parse form informa
 app.use(cors({credentials: true, origin: 'http://localhost:3000'})); //enable cors so that we can share resources back and forth between the backend and frontend
 app.use(cookieParser());
 
-require("./server/config/mongoose.config"); //this is a modularized version of the mongoose connection code located in the mongoose.config.js. this require() literally points to its location.
+require("./config/mongoose.config"); //this is a modularized version of the mongoose connection code located in the mongoose.config.js. this require() literally points to its location.
 
 
 
 //Routes here--Make sure routes import is below all the app.use commands above:
-require("./server/routes/expense.routes")(app); //have to pass in "app" keyword into routes file so that the routes file knows which "app is going to have our routes"
-require("./server/routes/user.routes")(app);
+require("./routes/expense.routes")(app); //have to pass in "app" keyword into routes file so that the routes file knows which "app is going to have our routes"
+require("./routes/user.routes")(app);
 
 app.get("/api/hello",(req,res)=>{
     res.json({msq:"Hey World, here I am!!"})
